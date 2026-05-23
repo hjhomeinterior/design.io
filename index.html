@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 및 소셜 메타 태그 -->
+    <title>현진인테리어 - 당신이 꿈꾸는 모든 공간의 시작</title>
+    <meta name="description" content="커피전문점·상가 인테리어부터 아파트 주거공간, 도배, 장판까지 원스톱 맞춤 시공. 프랜차이즈 및 백화점 시공 전문 현진인테리어입니다.">
+    <meta name="keywords" content="현진인테리어, 카페인테리어, 상가인테리어, 아파트리모델링, 도배장판, 프랜차이즈인테리어">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="현진인테리어 - 원스톱 토탈 공간 솔루션">
+    <meta property="og:description" content="더벤티, 에그몬 등 전국구 프랜차이즈와 백화점 입점 매장이 신뢰하고 선택한 명품 마감. 쉽고 빠른 실시간 견적 시스템 제공.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://github.com/hjhomeinterior/design.io.git">
+
+    <!-- 프리미엄 스타일시트 링크 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 헤더 / 내비게이션 -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo" id="header-logo">
+                <span>HJ</span> INTERIOR
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="active">회사소개</a></li>
+                <li><a href="#services">시공분야</a></li>
+                <li><a href="#calculator">실시간견적</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+                <li><a href="#contact" class="nav-contact-btn">상담신청</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <!-- 테마 토글 버튼 (다크/라이트) -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="테마 전환">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+                
+                <!-- Github 바로가기 버튼 (사용자 연동 요청 반영) -->
+                <a href="https://github.com/hjhomeinterior/design.io.git" target="_blank" class="github-link-btn" title="GitHub 저장소 바로가기" aria-label="GitHub 저장소">
+                    <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+                
+                <!-- 모바일 햄버거 메뉴 -->
+                <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 히어로 섹션 (메인 배너) -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="hero-tag">PREMIUM SPACE SOLUTION</span>
+                <h1>당신이 고민하는 모든 공간,<br>쉽고 신속하게 완성합니다.</h1>
+                <p>커피전문점·상업용 매장 인테리어부터 아파트 리모델링, 도배, 장판까지 외주 없는 올인원 원스톱 맞춤 시공을 제공합니다.</p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn btn-primary">실시간 견적 계산기</a>
+                    <a href="#contact" class="btn btn-outline">3분 신속 상담 신청</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 회사 핵심 강점 섹션 -->
+        <section id="about" class="features container fade-in-section">
+            <div class="section-header">
+                <h2 class="section-title">Why Hyunjin Interior?</h2>
+                <p class="section-subtitle">현진인테리어가 제공하는 차별화된 세 가지 공간 철학을 소개합니다.</p>
+            </div>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">⏱️</span>
+                    </div>
+                    <h3>신속한 요구사항 파악</h3>
+                    <p>복잡하고 막막한 미팅은 최소화합니다. 현장 베테랑 전문가가 고객의 디자인 비전과 실 예산을 즉각 파악하여 효율적이고 직관적인 맞춤 플랜을 수립합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">🛠️</span>
+                    </div>
+                    <h3>원스톱 토탈 시공 솔루션</h3>
+                    <p>기획 설계 및 도면 작성은 물론 맞춤형 가구 제작, 외부 사인(Signage) 설계, 그리고 꼼꼼한 도배·장판 마감까지 대행 수수료 없는 원스톱 직영 체제로 책임집니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">✨</span>
+                    </div>
+                    <h3>검증된 프랜차이즈 실적</h3>
+                    <p>더벤티, 에그몬, 레드애플 등 트렌디한 전국구 프랜차이즈 브랜드 매장 및 롯데·현대·신세계 대형 백화점의 엄격한 시공 가이드를 통과한 무결점 기술력을 자랑합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 서비스 영역 섹션 -->
+        <section id="services" class="services">
+            <div class="container fade-in-section">
+                <div class="section-header">
+                    <h2 class="section-title">시공 분야</h2>
+                    <p class="section-subtitle">한 장의 벽지 도배부터 고급 상업 공간의 전체 리뉴얼까지, 모든 크고 작은 인테리어 고민을 해결해 드립니다.</p>
+                </div>
+                <div class="grid-4">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                            <span class="service-badge">F&B</span>
+                        </div>
+                        <div class="service-info">
+                            <h3>커피전문점 & 카페</h3>
+                            <p>브랜드의 감성을 녹여낸 시각 연출 및 작업 효율을 극대화한 조리 동선, 급배수 위생 설비를 최적으로 설계합니다.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=600&q=80');"></div>
+                            <span class="service-badge">Residential</span>
+                        </div>
+                        <div class="service-info">
+                            <h3>아파트 & 주거공간</h3>
+                            <p>구조 변경, 시스템 에어컨 연동, 맞춤 수납 시스템을 통해 공간 활용도를 200% 넓히고 아늑한 라이프스타일을 담아냅니다.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80');"></div>
+                            <span class="service-badge">Commercial</span>
+                        </div>
+                        <div class="service-info">
+                            <h3>일반 상가 & 오피스</h3>
+                            <p>대형 마트 입점 점포, 오피스 빌딩, 사옥 및 로드숍 등 최적의 가시성과 업무 효율성을 창출하는 기능성 비즈니스 공간을 구축합니다.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80');"></div>
+                            <span class="service-badge">Detailing</span>
+                        </div>
+                        <div class="service-info">
+                            <h3>도배 & 장판 (부분시공)</h3>
+                            <p>합리적이고 저렴한 견적으로 전셋집 리모델링 또는 일부 낡은 실내 분위기를 180도 환골탈태시키는 전문 도배·장판 마감 서비스를 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프리미엄 실시간 견적 계산기 섹션 (추가 검토안 반영) -->
+        <section id="calculator" class="calculator-section">
+            <div class="container fade-in-section">
+                <div class="section-header">
+                    <h2 class="section-title">프리미엄 견적 계산기</h2>
+                    <p class="section-subtitle">원하시는 공간 유형, 예상 평수, 그리고 자재 등급을 선택하시면 실시간으로 대략적인 시공 견적 범위를 즉석 산출합니다.</p>
+                </div>
+                
+                <div class="calculator-wrapper">
+                    <!-- 견적 입력 필드 -->
+                    <div class="calculator-form">
+                        <div class="calc-group">
+                            <label for="calc-type">1. 인테리어 시공 유형 선택</label>
+                            <select id="calc-type" style="padding: 14px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; width: 100%; background-color: var(--bg-card); color: var(--text-primary);">
+                                <option value="cafe" selected>커피전문점 / 테이크아웃 카페</option>
+                                <option value="commercial">상가 / 일반 매장 / 사무실</option>
+                                <option value="apartment">아파트 / 주택 주거공간</option>
+                                <option value="partial">도배 / 장판 / 부분 도급 시공</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calc-group">
+                            <label>2. 시공 마감 및 자재/가구 등급 선택</label>
+                            <div class="grade-cards">
+                                <div class="grade-card" data-grade="economy">
+                                    <span class="grade-title">실속형 (Economy)</span>
+                                    <span class="grade-desc">합리적 친용성 마감<br>베이직 가구 및 도배</span>
+                                </div>
+                                <div class="grade-card active" data-grade="standard">
+                                    <span class="grade-title">고급형 (Standard)</span>
+                                    <span class="grade-desc">대다수가 만족한 베스트셀러<br>우수한 가성비 자재 배치</span>
+                                </div>
+                                <div class="grade-card" data-grade="premium">
+                                    <span class="grade-title">프리미엄형 (Premium)</span>
+                                    <span class="grade-desc">스페셜 친환경 대리석/조명<br>100% 비스포크 가구 맞춤</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calc-group">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <label for="calc-size-range">3. 예상 시공 면적 (평수 입력)</label>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="number" id="calc-size-text" value="15" min="5" max="100" style="width: 60px; padding: 6px 8px; border: 1px solid var(--border-color); border-radius: 4px; text-align: center; font-weight: 700; background-color: var(--bg-card); color: var(--text-primary);">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">평</span>
+                                </div>
+                            </div>
+                            <div class="range-container">
+                                <input type="range" id="calc-size-range" min="5" max="100" value="15" class="range-input">
+                                <div class="range-value-display">
+                                    <span>최소 5평</span>
+                                    <span class="range-current-value" id="current-pyung-label">15 평</span>
+                                    <span>최대 100평</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 실시간 산출 결과 영수증 -->
+                    <div class="calculator-result">
+                        <div class="result-header">
+                            <h3>실시간 자동 견적 내역</h3>
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="result-row">
+                                <span class="result-label">공간 분류</span>
+                                <span class="result-val" id="result-type">커피전문점 / 카페</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">마감 등급</span>
+                                <span class="result-val" id="result-grade">고급형 (기본+베스트셀러)</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">시공 면적</span>
+                                <span class="result-val" id="result-size">15 평</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">평당 예상단가</span>
+                                <span class="result-val" id="result-avg-price">평당 약 150만원</span>
+                            </div>
+                        </div>
+                        
+                        <div class="result-total-box">
+                            <div class="total-label">예상 시공 견적 총액 범위</div>
+                            <div class="total-price" id="result-total-price">1,980만 ~ 2,320만 <span>원</span></div>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" id="apply-estimate-btn" style="width: 100%; padding: 16px;">
+                            위 견적 결과로 상담 신청하기 ➔
+                        </button>
+                        
+                        <div class="calc-notice" style="margin-top: 15px;">
+                            * 상기 산출 견적은 철거 상태, 현장 층고, 상하수 배관 설비 신설 여부에 따라 다소 상이할 수 있으므로, 정확한 비용 검토를 위해 1:1 방문 실측 상담을 강력히 추천합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 포트폴리오 하이라이트 섹션 -->
+        <section id="portfolio" class="portfolio">
+            <div class="container fade-in-section">
+                <div class="section-header">
+                    <h2 class="section-title">대표 실적 포트폴리오</h2>
+                    <p class="section-subtitle">현진인테리어가 정교하게 정련하고 마감해 낸 대표 공간 시공 사례입니다.</p>
+                </div>
+                
+                <!-- 카테고리 필터 탭 -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">전체보기</button>
+                    <button class="filter-btn" data-filter="cafe">카페/F&B</button>
+                    <button class="filter-btn" data-filter="apartment">아파트 주거</button>
+                    <button class="filter-btn" data-filter="commercial">마트/상업유통</button>
+                </div>
+                
+                <div class="grid-portfolio">
+                    <!-- 포트폴리오 1 -->
+                    <div class="portfolio-item" data-category="cafe">
+                        <div class="portfolio-img-container">
+                            <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        </div>
+                        <div class="portfolio-detail">
+                            <span class="tag">F&B 카페</span>
+                            <h3>더 벤티 & 에그마카슈 프랜차이즈</h3>
+                            <p>공간 크기의 한계를 넘어서는 초고효율 테이크아웃 시스템 설비 및 빠른 픽업 동선 레이아웃. 브랜드의 정체성 컬러인 강렬한 바이올렛과 옐로우 테마를 현대적 감성으로 매치한 파사드 인테리어 설계.</p>
+                            <div class="client-list">
+                                <span>주요클라이언트:</span> 더벤티 전국지사, 에그마카슈, 에그몬, 레드애플
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 포트폴리오 2 -->
+                    <div class="portfolio-item" data-category="apartment">
+                        <div class="portfolio-img-container">
+                            <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80');"></div>
+                        </div>
+                        <div class="portfolio-detail">
+                            <span class="tag">주거 & 사옥 시공</span>
+                            <h3>아파트 패밀리 주거 & IT 기업 사옥</h3>
+                            <p>전농동 우성아파트, 죽전 아이빌 리모델링 등 공간 구획 변경 및 수납 일체화를 통한 미니멀 프리미엄 인테리어. 빌딩 사옥인 (주)비전정보통신 종합 리뉴얼 대형 공사까지 전격 수주 및 탁월한 품질로 완공.</p>
+                            <div class="client-list">
+                                <span>시공대상:</span> 우성아파트, 아이빌, (주)비전정보통신 사옥 등
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 포트폴리오 3 -->
+                    <div class="portfolio-item" data-category="commercial">
+                        <div class="portfolio-img-container">
+                            <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80');"></div>
+                        </div>
+                        <div class="portfolio-detail">
+                            <span class="tag">마트·백화점 특수매장</span>
+                            <h3>백화점 쇼룸 및 마트 특수 시공</h3>
+                            <p>야간 공사, 방염 자재 사용 등 까다로운 입점 가이드라인을 완전 준수해야 하는 특수 유통 채널 시공 노하우 탑재. 신세계·롯데·현대·갤러리아 백화점 쇼룸 및 대형 할인마트인 이마트, 홈플러스 입점 다수 브랜드 시공.</p>
+                            <div class="client-list">
+                                <span>입점유통사:</span> 현대/롯데/신세계/갤러리아 백화점, 이마트, 홈플러스
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 신속 견적 문의 폼 -->
+        <section id="contact" class="contact">
+            <div class="container fade-in-section">
+                <div class="section-header">
+                    <h2 class="section-title">신속 견적 및 상담 신청</h2>
+                    <p class="section-subtitle">인테리어에 관한 모든 의문점과 막막함을 한 번에 해결해 드립니다. 아래 내용을 작성해 주시면 전문가가 3분 안에 검토 후 연락드립니다.</p>
+                </div>
+                
+                <div class="form-container">
+                    <form id="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">고객명 / 담당 회사명 *</label>
+                                <input type="text" id="name" required placeholder="예: 홍길동 (또는 주식회사 현진)">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">연락처 *</label>
+                                <input type="tel" id="phone" required placeholder="예: 010-1234-5678">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="type">상담 희망 인테리어 유형</label>
+                                <select id="type">
+                                    <option value="cafe">커피전문점 / 테이크아웃 카페</option>
+                                    <option value="commercial">상가 / 일반 매장 / 사무실</option>
+                                    <option value="apartment">아파트 / 주택 주거공간</option>
+                                    <option value="partial">도배 / 장판 / 부분 도급 시공</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="size">희망 시공 평수</label>
+                                <input type="text" id="size" placeholder="예: 15평 (혹은 견적 계산기에서 전송)">
+                            </div>
+                            
+                            <div class="form-group full">
+                                <label for="message">요구사항 및 특이사항 설명</label>
+                                <textarea id="message" rows="6" placeholder="희망하시는 컨셉, 핵심 레이아웃 구성, 브랜드 가이드라인 등을 자유롭게 기재해 주세요. 계산기 결과를 바탕으로 구체적인 이야기를 작성해 주셔도 매우 좋습니다."></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="agree" required checked>
+                            <label for="agree">현진인테리어의 개인정보 수집 및 상담 이용약관에 동의합니다. (필수)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 18px 0; justify-content: center;">
+                            실시간 무료 1:1 방문상담 신청하기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 커스텀 성공 모달 레이어 -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content">
+            <span class="modal-icon">🎉</span>
+            <h3>상담 접수 완료</h3>
+            <p>소중한 상담 요청이 정상적으로 현진인테리어 고객지원팀에 접수되었습니다.<br><br>작성해주신 정보를 토대로 담당 베테랑 디자이너가 배정될 예정이며, <strong>3시간 이내에 신속하게 유선 또는 문자 연락</strong>을 드리겠습니다. 감사합니다!</p>
+            <button class="btn btn-primary" id="modal-close-btn" style="width: 100%; padding: 12px 0;">확인 완료</button>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo"><span>HJ</span> INTERIOR</div>
+                <p><strong>현진인테리어 (Hyunjin Interior)</strong> | 대표번호: 010-XXXX-XXXX</p>
+                <p>상업공간·프랜차이즈·주거공간 설계 및 원스톱 시공 전문 파트너</p>
+                <p>이메일 문의: <a href="mailto:hj_interior@naver.com" style="color: #c5a880; font-weight: 500;">hj_interior@naver.com</a></p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-link-group">
+                    <h4>메뉴 바로가기</h4>
+                    <ul>
+                        <li><a href="#about">회사소개</a></li>
+                        <li><a href="#services">시공분야</a></li>
+                        <li><a href="#calculator">실시간견적</a></li>
+                        <li><a href="#portfolio">포트폴리오</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-link-group">
+                    <h4>외부 연동 채널</h4>
+                    <ul>
+                        <li><a href="https://github.com/hjhomeinterior/design.io.git" target="_blank">GitHub 저장소 ➔</a></li>
+                        <li><a href="mailto:hj_interior@naver.com">네이버 이메일 문의 ➔</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-copy">
+                <p>&copy; 2026 현진인테리어 (Hyunjin Interior). All Rights Reserved.</p>
+                <div class="footer-social">
+                    <!-- GitHub 소셜 링크 추가 -->
+                    <a href="https://github.com/hjhomeinterior/design.io.git" target="_blank" class="footer-social-btn" title="GitHub" aria-label="GitHub">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 인터랙티브 스크립트 링크 -->
+    <script src="script.js"></script>
+</body>
+</html>
